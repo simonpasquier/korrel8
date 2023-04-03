@@ -106,6 +106,7 @@ rules:
          {
            "LogType": "{{ k8sLogType .Namespace }}",
            "LogQL": "{kubernetes_namespace_name=\"{{.Namespace}}\",kubernetes_pod_name=\"{{.Name}}\"} | json"
+         }
 
    - name: NamespacedResourceToNamespace
      start:
